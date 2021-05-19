@@ -27,7 +27,7 @@ final class ShowBooksAction
 
 		// Transform the result into the JSON representation
 		$result = [
-			'livres' => $userId
+			'alcohols' => $userId
 		];
 
 		// Build the HTTP response

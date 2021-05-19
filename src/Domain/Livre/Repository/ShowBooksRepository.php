@@ -33,7 +33,7 @@ class ShowBooksRepository
 	 */
 	public function selectAllBook(): array
 	{
-		$sql = "SELECT * FROM livres";
+		$sql = "SELECT * FROM alcohol";
 		$query = $this->connection->prepare($sql);
 		$query->execute();
 		$result = $query->fetchAll(PDO::FETCH_ASSOC);

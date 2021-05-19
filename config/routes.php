@@ -9,13 +9,13 @@ return function (App $app) {
 
     $app->post('/users', \App\Action\UserCreateAction::class);
 
-	$app->get('/books', \App\Action\ShowBooksAction::class);
+	$app->get('/alcohols', \App\Action\ShowBooksAction::class);
 
 	$app->get('/books/{id}', \App\Action\ShowBooksIDAction::class);
 
 	$app->get('/books/titles/{titre}', \App\Action\ShowBooksTitreAction::class);
 
-	$app->post('/add/livre', \App\Action\AddBookAction::class);
+	$app->post('/add/book', \App\Action\AddBookAction::class);
 
 	$app->get('/docs/v1', \App\Action\Docs\SwaggerUiAction::class);
 
